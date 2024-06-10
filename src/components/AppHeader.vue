@@ -102,7 +102,11 @@ export default {
             text-transform: uppercase;
             font-size: 13px;
             font-weight: bold;
+            a{
+                color: black;
+            }
         }
+
     }
     header{
         background-color: white;

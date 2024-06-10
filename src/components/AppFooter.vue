@@ -1,51 +1,47 @@
 <script >
-
+export default {
+    data() {
+        return {
+            dcComicsLinks : [ "Characters" , "Comics" , "Movies" , "TV" , "Games" , "Videos" , "News"] , 
+            shopLinks : [ " Shop DC" , "Shop DC Collectibles"] , 
+            dcLinks : [ "Privacy policy(new)" , "Ad Choices" ,"Advertising" , "Jobs" , "Subscriptions","Talent Workshops" , "CPSC Certificates" , "Ratings" , "Shop Help" , "Contact Us"] , 
+            sitesLinks : [ "MAD Magazine" ,"DC Kids" ,"DC Universe" ,"DC Power Visa"] 
+        }
+    }
+}
 </script>
 
 <template>
     <footer>
         <section >
             <div>
-                <h2>Test</h2>
+                <h2>dc comics</h2>
                 <ul>
-                    <li>Testli</li>
-                    <li>Testli</li>
-                    <li>Testli</li>
-                    <li>Testli</li>
+                    <li v-for="(link , index) in dcComicsLinks" :key="index" >
+                        <a href="">{{ link }}</a>
+                    </li>
                 </ul>
-                <h2>TestTitle</h2>
+                <h2>shop</h2>
                 <ul>
-                    <li>Testli</li>
-                    <li>Testli</li>
-                    <li>Testli</li>
-
+                    <li v-for="(link , index) in shopLinks" :key="index" >
+                        <a href="">{{ link }}</a>
+                    </li>
                 </ul>
             </div>
             <div>
-                <h2>TestTitle</h2>
+                <h2>dc</h2>
                 <ul>
-                    <li>Testli</li>
-                    <li>Testli</li>
-                    <li>Testli</li>
-                    <li>Testli</li>
-                    <li>Testli</li>
-                    <li>Testli</li>
-                    <li>Testli</li>
-                    <li>Testli</li>
-                    <li>Testli</li>
-                    <li>Testli</li>
-                    <li>Testli</li>
-                    <li>Testli</li>
+                    <li v-for="(link , index) in dcLinks" :key="index" >
+                        <a href="">{{ link }}</a>
+                    </li>
                 </ul>
             </div>
             <div>
-                <h2>TestTitle</h2>
+                <h2>sites</h2>
                 <ul>
-                    <li>Testli</li>
-                    <li>Testli</li>
-                    <li>Testli</li>
-                    <li>Testli</li>
-                    <li>Testli</li>
+                    <li v-for="(link , index) in sitesLinks" :key="index" >
+                        <a href="">{{ link }}</a>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -87,9 +83,14 @@
         background-size: cover;
     }
     section div{
-        margin-right: 4rem;
+        margin-right: 5rem;
     }
-    section,
+    section{
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+        padding: 2rem 0 1.5rem;
+    }
     div.footer-nav
     {
         display: flex;
@@ -115,8 +116,9 @@
         text-transform: uppercase;
         margin-bottom: 1rem;
     }
-    li{
+    a{
         color: #778581;
+        font-size: 11px;
     }
     ul{
         margin-bottom: 1rem;
