@@ -4,14 +4,14 @@
 
 <template>
     <header> 
+        <nav>
+        
         <div class="header-logo">
             <img src="../assets/img/dc-logo.png" alt="DC-Logo">
         </div>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Test</a>
+        <ul>
+            <li>
+                <a href="">Test</a>
                 </li>
                 <li>
                     <a href="">Test</a>
@@ -28,14 +28,14 @@
                 <li>
                     <a href="">Test</a>
                 </li>
-            </ul>
+        </ul>
         </nav>
     </header>
 
 </template>
 
 <style scoped>
-    header{
+    nav{
         display: flex;
         width: 60%;
         margin: 0 auto;
@@ -47,5 +47,8 @@
         li{
             padding: 2rem;
         }
+    }
+    header{
+        background-color: white;
     }
 </style>
