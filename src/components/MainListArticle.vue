@@ -6,7 +6,7 @@ export default {
     },
     data() {
         return {
-            ArticleList : [
+            ArticlesList : [
             {
                 "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
                 "price": "$19.99",
@@ -86,10 +86,22 @@ export default {
 </script>
 
 <template>
-        CIAOOOOOOOOOOOOOOOOOOOOOOOO
-    <SingleArticle />
+    <section class="articles-list">
+        <div>
+            <SingleArticle v-for="(article , index) in ArticlesList" :key="index" :singleComics="article" />
+        </div>
+    </section>
 </template>
 
-<style scoped>
-
+<style lang="scss" scoped>
+section{
+        color: white;
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+    }
 </style>

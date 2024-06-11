@@ -44,6 +44,9 @@ export default {
                     </li>
                 </ul>
             </div>
+            <div class="dc-logo">
+                <img src="../assets/img/dc-logo-bg.png" alt="logo-dc">
+            </div>
         </section>
 
         <nav>
@@ -76,7 +79,7 @@ export default {
     </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
     footer{
         background-image: url("../assets/img/footer-bg.jpg");
         background-repeat: no-repeat;
@@ -135,6 +138,10 @@ export default {
         text-transform: uppercase;
         font-weight: bolder;
         padding-top: 0.7rem;
+    }
+    .dc-logo img{
+        width: 70%;
+        margin-left: 10rem;
     }
 
 </style>
