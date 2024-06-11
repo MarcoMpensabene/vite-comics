@@ -1,25 +1,37 @@
 <script >
-
+import MainListArticle from "./MainListArticle.vue"
+export default {
+    components :{
+        MainListArticle ,
+    },
+    data() {
+        return {
+            
+            }
+        }
+}
 </script>
 
 <template>
     <main>
+        <section class="jumbo-tron">
+        </section>
         <div>
-            <h2>
-            --> Content goes Here <--
-            </h2>
+            <MainListArticle />
         </div>
     </main>
 </template>
 
 <style scoped>
 main{
-    background-color: #1c1c1c;
-    padding: 5rem 0 5rem;
     div{
         color: white;
         width: 60%;
         margin: 0 auto;
+    }
+    section.jumbo-tron{
+        background-image: url("../assets/img/jumbotron.jpg");
+        height: 400px;
     }
 }
 </style>
